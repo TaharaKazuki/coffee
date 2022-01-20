@@ -14,7 +14,9 @@ const Banner: FC<IBannerProps> = ({ buttonText, handleOnClick }) => {
         <span className={styles.title2}>Connoissuer</span>
       </h1>
       <p className={styles.subTitle}>Discover your local coffee shop!</p>
-      <button className={styles.button}>{buttonText}</button>
+      <div className={styles.buttonWrapper}>
+        <button className={styles.button}>{buttonText}</button>
+      </div>
     </div>
   )
 }
